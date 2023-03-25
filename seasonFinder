@@ -1,0 +1,14 @@
+# girilen aya göre mevsim bulan program.
+ay = input("Lutfen bulundugunuz ayi giriniz :")
+ay = ay.capitalize()
+
+if ay == "Aralik" or ay == "Ocak" or ay == "Subat":
+    print("Kis mevsimindesiniz...")
+elif ay == "Mart" or ay == "Nisan" or ay == "Mayis":
+    print("Ilkbahar mevsimindesiniz...")
+elif ay == "Haziran" or ay == "Temmuz" or ay == "Agustos":
+    print("Yaz mevsimindesiniz...")
+elif ay == "Eylul" or ay == "Ekim" or ay == "Kasim":
+    print("Sonbahar mevsimindesiniz...")
+else:
+    print("LUTFEN KURALLARA UYGUN, GECERLI BIR ISLEM YAPINIZ!!!")
