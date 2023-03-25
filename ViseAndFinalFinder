@@ -1,0 +1,26 @@
+print("1 vize ve 1 final notu girilecektir. Gecme notu 50'dir.")
+vizePuani = int(input("Vize notunuzu giriniz :"))
+vizePuani *= 0.4
+finalPuani = int(input("Final notunuzu giriniz :"))
+finalPuani *= 0.6
+toplamOrt= vizePuani+finalPuani
+
+if vizePuani >40 or vizePuani<0 or finalPuani >60 or finalPuani <0:
+    print("LUTFEN GECERLI BIR VIZE VE/VEYA FINAL PUANI GIRINIZ!")
+else:
+    if toplamOrt >= 50 and finalPuani >=30:
+        print("Ortalamaniz :",toplamOrt)
+        print("TEBRIKLER! Dersi gectiniz.")
+    elif toplamOrt >= 0 and finalPuani <30:
+        print("Ortalamaniz :",toplamOrt)
+        print("Dersten kaldiniz...")
+    if toplamOrt >= 90:
+        print("A aldiniz...")
+    elif toplamOrt >= 75 and toplamOrt < 90:
+        print("B aldiniz...")
+    elif toplamOrt >= 60 and toplamOrt< 75:
+        print("C aldiniz...")
+    elif toplamOrt >= 50 and toplamOrt< 60:
+        print("D aldiniz...")
+    else:
+        print("F aldiniz ve kaldiniz, seneye bir daha deneyin...")
