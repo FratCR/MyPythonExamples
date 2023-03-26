@@ -1,0 +1,20 @@
+# 6 katli binada her katta 4 daire vardir. Daire numarasina göre kat bulan program.
+print("Lutfen 1 ile 28 arasindaki daire numaranizi giriniz :")
+daireNo = int(input())
+
+if daireNo < 5 and daireNo > 0:
+    print("Zemin katta oturuyorsunuz.")
+elif daireNo < 9 and daireNo > 4:
+    print("1. Katta oturuyorsunuz.")
+elif daireNo < 13 and daireNo > 8:
+    print("2. Katta oturuyorsunuz.")
+elif daireNo < 17 and daireNo > 12:
+    print("3. Katta oturuyorsunuz.")
+elif daireNo < 21 and daireNo > 16:
+    print("4. Katta oturuyorsunuz.")
+elif daireNo < 25 and daireNo > 20:
+    print("5. Katta oturuyorsunuz.")
+elif daireNo < 29 and daireNo > 24:
+    print("6. Katta oturuyorsunuz.")
+else:
+    print("Lutfen gecerli bir sayi giriniz!")
